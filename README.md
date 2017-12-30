@@ -11,7 +11,7 @@ cd ${HOME}/.one/ && \
 fc-cache fonts 3&>/dev/null  && \
 echo -n Done
 cd .tmux
-git submodule update --init --recursive --remote && mkdir -p ${HOME}/.one/fonts && wget -o ${HOME}/.one/fonts/Inconsolata\ for\ Powerline.otf "https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata\ for\ Powerline.otf"
+git submodule update --init --recursive --remote && mkdir -p ${HOME}/.one/fonts && wget -O ${HOME}/.one/fonts/Inconsolata\ for\ Powerline.otf "https://github.com/powerline/fonts/raw/master/Inconsolata/Inconsolata\ for\ Powerline.otf"
 cd ${HOME} && \
 ln -s -f .one/.tmux.conf.local
 ln -s -f .one/.zshrc
