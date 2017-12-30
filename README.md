@@ -20,11 +20,11 @@ setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
       ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
       done && \
-      printf "Modified: %s\n" `ls -laHF ~/.*(L-60) |grep \@`
 echo -en "Finally Done. I think" &&
 ln -s -f .one/.zshenv
 ln -s -f .one/.zshfunc
 ln -s -f .one/.tmux .tmux && source ~/.zshrc
+printf "Modified: %s\n" `ls -laHF ~/.*(L-60) |grep \@` |grep \/
 zsh
 ```
 
