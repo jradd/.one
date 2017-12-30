@@ -14,7 +14,8 @@ cd "${HOME}" && ln -s -f .one/.tmux.conf.local
 ln -s -f .one/.zshrc
 ln -s -f .one/.zshenv
 ln -s -f .one/.zshfunc
-ln -s -f .one/.tmux .tmux && echo -n Finally Done. I think 
+ln -s -f .one/.tmux .tmux && source ~/.zshrc;
+echo -n Finally Done. I think 
 ```
 
 ## zshfunc
