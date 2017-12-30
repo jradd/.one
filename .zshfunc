@@ -57,7 +57,6 @@ sed -e '/^[ \t]*#/d' $1 |sed '/^$/d' # sed '/./!d'
 
 
 function _gc_repo () {
- curl -u jradd https://api.github.com/user/repos -d '{"name":"$1"}' \
-	&& echo $#; echo $1
+ curl -u $1 https://api.github.com/user/repos -d '{"name":"$2"}'
 }
 

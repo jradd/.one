@@ -1,6 +1,7 @@
-
 # .one dot
 oh-my-tmux, powerline, should just effing work
+
+
 
 ```zsh 
 cd $HOME &&
@@ -17,3 +18,9 @@ ln -s -f .one/.zshrc
 ln -s -f .one/.tmux .tmux && \
 echo -n "Finally Done. I think"
 ```
+
+## zshfunc
+`_gc_repo <user> <repo>`
+
+### TODO
+Add find all broken symlinks after rm rf .one to revert
