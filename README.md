@@ -20,8 +20,10 @@ ln -s -f .one/.tmux .tmux && echo -n Finally Done. I think
 ## zshfunc
 `_gc_repo <user> <repo>`
 
-### TODO
-Add find all broken symlinks after rm rf .one to revert
 
+## REVERT
 
-
+```
+all_syms=($(find . -maxdepth 1 -type l |xargs stat -f "%Y"))               
+for v in ${all_syms[@]}; do [ -f "$v" ] || echo $v; done && echo -en "Done"
+```
