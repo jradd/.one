@@ -1,7 +1,8 @@
-# .one dot
+# one dotfile to rule them all
 oh-my-tmux, powerline, should just effing work
 
 
+The following needs to be cleaned up. Works great on OS X, but not Linux.
 
 ```zsh 
 cd "${HOME}" &&
