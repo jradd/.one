@@ -6,7 +6,7 @@ The following needs to be cleaned up. Works great on OS X, but not Linux.
 
 ```zsh 
 cd "${HOME}" &&
-git clone https://github.com/jradd/.one.git && echo -n Done
+git clone https://github.com/jradd/one.git && echo -n Done
 cd "${HOME}"/.one/ && fc-cache fonts 3&>/dev/null  && echo -n Done
 cd .tmux
 git submodule update --init --recursive --remote;
